@@ -12,7 +12,7 @@ const CompanyVerification = () => {
   const fetchCompany = async () => {
     try {
       const res = await fetch(
-        `skillhub-backend-production-e6ee.up.railway.app/api/admin/companies/${id}`
+        `https://skillhub-backend-production-e6ee.up.railway.app/api/admin/companies/${id}`
       );
       const data = await res.json();
       setCompany(data);
@@ -31,7 +31,7 @@ const CompanyVerification = () => {
   const updateStatus = async (newStatus) => {
     try {
       const res = await fetch(
-        `skillhub-backend-production-e6ee.up.railway.app/api/admin/companies/${id}/status`,
+        `https://skillhub-backend-production-e6ee.up.railway.app/api/admin/companies/${id}/status`,
         {
           method: "PUT",
           headers: {

@@ -9,7 +9,7 @@ const TotalCompany = () => {
 
   const fetchCompanies = async () => {
     try {
-      const res = await fetch("skillhub-backend-production-e6ee.up.railway.app/api/admin/companies");
+      const res = await fetch("https://skillhub-backend-production-e6ee.up.railway.app/api/admin/companies");
       const data = await res.json();
       setCompanies(data);
     } catch (error) {

@@ -5,7 +5,7 @@ const Internships = () => {
   const [internships, setInternships] = useState([]);
 
   useEffect(() => {
-    fetch("skillhub-backend-production-e6ee.up.railway.app/api/admin/internships")
+    fetch("https://skillhub-backend-production-e6ee.up.railway.app/api/admin/internships")
       .then((res) => res.json())
       .then((data) => setInternships(data))
       .catch((err) => console.error(err));

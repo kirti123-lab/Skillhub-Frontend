@@ -7,7 +7,7 @@ const StudentProfile = () => {
   const [student, setStudent] = useState(null);
 
   useEffect(() => {
-    fetch("skillhub-backend-production-e6ee.up.railway.app/api/admin/students")
+    fetch("https://skillhub-backend-production-e6ee.up.railway.app/api/admin/students")
       .then(res => res.json())
       .then(data => {
         const found = data.find(s => s.id === id);
