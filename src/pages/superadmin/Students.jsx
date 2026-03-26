@@ -12,7 +12,7 @@ const Students = () => {
   const [filter, setFilter] = useState("All");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/admin/students")
+    fetch("skillhub-backend-production-e6ee.up.railway.app/api/admin/students")
       .then((res) => res.json())
       .then((data) => setStudents(data))
       .catch((err) => console.error(err));

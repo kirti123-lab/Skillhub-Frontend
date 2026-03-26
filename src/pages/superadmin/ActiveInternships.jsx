@@ -6,7 +6,7 @@ const ActiveInternships = () => {
 
   
    useEffect(() => {
-  fetch("http://localhost:5000/api/admin/internships")
+  fetch("skillhub-backend-production-e6ee.up.railway.app/api/admin/internships")
     .then((res) => res.json())
     .then((data) => {
       setActiveInternships(data);

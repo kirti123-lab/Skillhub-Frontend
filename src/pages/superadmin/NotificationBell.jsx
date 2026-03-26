@@ -5,7 +5,7 @@ const NotificationBell = () => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/user-announcements")
+    fetch("skillhub-backend-production-e6ee.up.railway.app/api/user-announcements")
       .then((res) => res.json())
       .then((data) => setNotifications(data))
       .catch((err) => console.error(err));

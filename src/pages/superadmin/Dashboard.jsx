@@ -16,12 +16,12 @@ const Dashboard = () => {
   const [totalCompaniesCount, setTotalCompaniesCount] = useState(0);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/admin/students")
+    fetch("skillhub-backend-production-e6ee.up.railway.app/api/admin/students")
       .then((res) => res.json())
       .then((data) => setStudentsCount(data.length))
       .catch(() => setStudentsCount(0));
 
-    fetch("http://localhost:5000/api/admin/companies")
+    fetch("skillhub-backend-production-e6ee.up.railway.app/api/admin/companies")
       .then((res) => res.json())
       .then((data) => {
         setTotalCompaniesCount(data.length);
@@ -37,7 +37,7 @@ const Dashboard = () => {
         setCompaniesCount(0);
       });
 
-    fetch("http://localhost:5000/api/admin/internships")
+    fetch("skillhub-backend-production-e6ee.up.railway.app/api/admin/internships")
       .then((res) => res.json())
       .then((data) => {
         setInternshipsCount(data.length);
@@ -53,7 +53,7 @@ const Dashboard = () => {
         setActiveInternshipsCount(0);
       });
 
-    fetch("http://localhost:5000/api/admin/active-tests")
+    fetch("skillhub-backend-production-e6ee.up.railway.app/api/admin/active-tests")
       .then((res) => res.json())
       .then((data) => {
         setActiveTestsCount(data.length);

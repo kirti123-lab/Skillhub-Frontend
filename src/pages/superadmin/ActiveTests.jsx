@@ -5,7 +5,7 @@ const ActiveTests = () => {
   const [activeTests, setActiveTests] = useState([]);
 
   useEffect(() => {
-  fetch("http://localhost:5000/api/admin/active-tests")
+  fetch("skillhub-backend-production-e6ee.up.railway.app/api/admin/active-tests")
     .then((res) => res.json())
     .then((data) => {
       setActiveTests(data);
