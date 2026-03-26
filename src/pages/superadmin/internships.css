@@ -1,0 +1,84 @@
+
+.internships-wrapper {
+  padding: 30px;
+  background: #f4f6f8;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.internships-wrapper h2 {
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+
+.table-container {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.internships-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.internships-table thead {
+  background: #eef2ff;
+}
+
+.internships-table th {
+  text-align: left;
+  padding: 12px;
+  font-size: 14px;
+  color: #1e3a8a;
+  border-bottom: 1px solid #dbeafe;
+}
+
+
+.internships-table td {
+  padding: 12px;
+  font-size: 14px;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: top;
+}
+
+
+.internships-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+
+.internships-table td:last-child {
+  max-width: 260px;
+  line-height: 1.5;
+}
+
+
+.internships-table td:nth-child(5) {
+  font-weight: 600;
+  color: #065f46;
+}
+
+
+.internships-table td[colspan] {
+  padding: 20px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+
+@media (max-width: 900px) {
+  .internships-table {
+    font-size: 13px;
+  }
+
+  .internships-table th,
+  .internships-table td {
+    padding: 10px;
+  }
+}

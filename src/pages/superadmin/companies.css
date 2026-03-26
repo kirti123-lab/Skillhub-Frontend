@@ -1,0 +1,84 @@
+/* ===== PAGE BACKGROUND ===== */
+.companies-page {
+  padding: 40px;
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== PAGE TITLE (Now Dark Box) ===== */
+.companies-page h2 {
+  background-color: #111827;
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* ===== TABLE CONTAINER ===== */
+.table-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+}
+
+/* ===== TABLE ===== */
+.companies-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 750px;
+}
+
+
+.companies-table thead {
+  background-color: #e5e7eb;
+}
+
+.companies-table thead th {
+  color: #111827;
+  padding: 16px;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #2563eb;
+}
+
+
+.companies-table tbody td {
+  padding: 15px;
+  font-size: 14px;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+.companies-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-badge.approved {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+
+.companies-table tbody tr td[colspan] {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+  font-size: 15px;
+}

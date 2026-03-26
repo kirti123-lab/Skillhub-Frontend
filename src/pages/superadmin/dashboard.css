@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.dashboard-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: #f1f3f8;
+}
+
+
+.navbar {
+  height: 60px;
+  background: #4b5563;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 28px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.info-icon {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.info-icon:hover {
+  opacity: 0.7;
+}
+
+.menu-icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.nav-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.admin-name {
+  font-size: 14px;
+}
+
+
+
+.logout-btn {
+  background: #e5e7eb;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+
+.cards-grid {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  min-height: calc(100vh - 60px); 
+}
+
+.card {
+  border-radius: 14px;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  min-height: 140px;   
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+.card-blue {
+  background: #e4e9ff;
+}
+
+.card-green {
+  background: #dcf7eb;
+}
+
+.card-purple {
+  background: #e9e4ff;
+}
+
+.card-orange {
+  background: #ffe9d6;
+}
+
+.card-red {
+  background: #ffe2e2;
+}
+
+.card-teal {
+  background: #d9f5f1;
+}
+
+
+.icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+
+.blue {
+  background: #c7d2fe;
+  color: #1e3a8a;
+}
+
+.green {
+  background: #a7f3d0;
+  color: #065f46;
+}
+
+.purple {
+  background: #ddd6fe;
+  color: #5b21b6;
+}
+
+.orange {
+  background: #fed7aa;
+  color: #9a3412;
+}
+
+.red {
+  background: #fecaca;
+  color: #991b1b;
+}
+
+.teal {
+  background: #99f6e4;
+  color: #115e59;
+}
+
+
+
+.card p {
+  font-size: 30px;
+  font-weight: 700;
+  color: #374151;
+}
+
+.card h2 {
+  font-size: 32px;
+  font-weight: 650;
+  color: #111827;
+}
